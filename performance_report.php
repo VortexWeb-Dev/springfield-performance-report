@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 <?php include('includes/sidebar.php'); ?>
 
-<div class="p-10 flex-1">
+<div class="p-10 w-[80%]">
     <h1 class="text-2xl font-bold mb-6 text-center">July 2024 Performance Evaluation</h1>
     <h2 class="text-xl font-semibold mb-4 text-center">Ahmed Godil</h2>
 
