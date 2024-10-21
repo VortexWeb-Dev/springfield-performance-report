@@ -1,4 +1,4 @@
 <?php
-header("Location: management_dashboard.php");
+header("Location: performance_report.php");
 exit();
 ?>
