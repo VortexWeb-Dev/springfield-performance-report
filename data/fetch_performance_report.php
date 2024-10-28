@@ -1,5 +1,6 @@
 <?php
 include('fetch_leads.php');
+include('fetch_deals.php');
 include('fetch_users.php');
 include('../controllers/calculate_agent_rank.php');
 require_once __DIR__ . '/../crest/crest.php';
@@ -26,7 +27,7 @@ $new_hubspot_meetings = 0;
 $propertyfinder_ads = 3;
 $propertyfinder_leads = 5;
 
-$all_deals = CRest::call('crm.deal.list', ['filter' => ['ASSIGNED_BY_ID' => $user_id]])['result'];
+$all_deals = get_filtered_deals(['ASSIGNED_BY_ID' => $user_id]);
 $total_earnings = 0;
 
 foreach ($all_deals as $deal) {
